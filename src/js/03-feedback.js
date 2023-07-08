@@ -22,8 +22,8 @@ function setInputs() {
 
 function updateInputs() {
   const obj = JSON.parse(localStorage.getItem('feedback-form-state'));
-  emailInput.value = obj.email != null ? obj.email : '';
-  messageInput.value = obj.message != null ? obj.message : '';
+  emailInput.value = obj !== null ? obj.email : '';
+  messageInput.value = obj !== null ? obj.message : '';
 }
 
 function btnClicked(event) {
