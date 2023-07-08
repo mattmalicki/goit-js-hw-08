@@ -18,6 +18,6 @@ function createGalleryMarkups(array) {
   return markupsString;
 }
 
-let galleryLightbox = new SimpleLightbox('.gallery a');
+let galleryLightbox = new simpleLightbox('.gallery a');
 galleryLightbox.defaultOptions.captionsData = 'alt';
 galleryLightbox.defaultOptions.captionDelay = 250;
