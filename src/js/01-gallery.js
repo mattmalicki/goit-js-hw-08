@@ -1,4 +1,4 @@
-import simpleLightbox from 'simplelightbox';
+import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { galleryItems } from './gallery-items';
 
@@ -18,6 +18,6 @@ function createGalleryMarkups(array) {
   return markupsString;
 }
 
-let galleryLightbox = new simpleLightbox('.gallery a');
+let galleryLightbox = new SimpleLightbox('.gallery a');
 galleryLightbox.defaultOptions.captionsData = 'alt';
 galleryLightbox.defaultOptions.captionDelay = 250;
